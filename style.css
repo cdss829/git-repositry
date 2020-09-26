@@ -3,7 +3,6 @@
 *{
 	box-sizing: border-box;
 }
-
 html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
 	margin: 0;
 	padding: 0;
@@ -16,19 +15,57 @@ body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	width: 100%;
 }
-
-/* header */
-.header,.header-logo a img,.header-nav{
-  height: 60px;
+/* リンクのデコレーション */
+a{
+	text-decoration: none;
+	color: #31aae2;
+	display: inline-block;
+	position: relative;
+	transition: .3s;
 }
-/* floatで横並び */
+a::after{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: #31aae2;
+	transition: .3s;
+	transform: translateX(-50%);
+}
+a:hover::after{
+	width: 150%;
+}
+a:visited{
+	color: blueviolet;
+}
+a:visited::after{
+	width: 100%;
+	background-color: blueviolet;
+}
+/* リンクのデコレーション 終わり */
+
+/* headerをfloatで横並びにし固定表示 */
+/* 固定表示 */
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: blanchedalmond;
+	padding: 0 60px;
+	position: fixed;
+}
+/* float */
 .header-logo{
-	width: 50%;
+	width: 40%;
+	height: 60px;
 	float: left;
-	padding-left: 60px;
+}
+.header-logo img{
+	height: 60px;
 }
 .header-nav{
-	width: 50%;
+	width: 60%;
 	float: right;
 }
 .header-nav ul li{
@@ -38,8 +75,95 @@ body {
 	padding: 15px;
 	text-align: center;
 }
-/* floatで横並び 終わり */
+.header{
+	overflow: hidden;
+}
+/* headerをfloatで横並びにし固定表示 終わり */
+/* header end */
+
+/* main */
+/* hrader固定表示分padding-top:60px */
 main{
 	width: 90%;
+	padding-top: 60px;
 	margin: 0 auto;
 }
+.sub-title{
+	background-color: cornsilk;
+	width: 100%;
+	text-align: center;
+}
+
+/* 以下横並びについては https://qiita.com/katsunory/items/99a417f4e1a763477a09 参照 */
+
+/* floatで横並び */
+.a-list{
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-top: 18px;
+}
+.a-nav{
+	height: 60px;
+  overflow: hidden;
+}
+.clearfix:after {
+  content:" ";
+  display:block;
+  clear:both;
+}
+/* floatで横並び 終わり */
+
+/* inline-blockで横並び */
+.ka-list{
+  display: inline-block;
+	font-size: 16px;
+	width: 20%;
+	text-align: center;
+	margin-top: 18px;
+}
+.ka-nav{
+	height: 60px;
+  font-size: 0;
+}
+/* inline-blockで横並び終わり */
+
+/* table-cellで横並び */
+.sa-list{
+	height: 60px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.sa-nav ul{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+/* table-cellで横並び 終わり */
+
+/* flexboxで横並び */
+.ta-nav ul{
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ta-list{
+	width: 20%;
+	text-align: center;
+}
+/* flexboxで横並び 終わり */
+
+/* gridで横並びで横並び */
+.na-nav ul{
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(5,1fr);
+	grid-auto-rows: 60px;
+}
+.na-list{
+	align-self: center;
+	justify-self: center;
+}
+/* gridで横並びで横並び 終わり */

@@ -19,11 +19,10 @@
   <!-- header -->
   <header class="header">
     <!-- header/logo -->
-    <!-- floatで横並び -->
+    <!-- headerをfloatで横並びにし固定表示 -->
     <h1 class="header-logo">
-      <a href="/index.html">
-        <img src="picture/logo-mark-side.png" alt="Japanese syllabary">
-      </a>
+      <!-- imgタグにsrc属性(GIF・JPEG・PNGの三種類)、width属性とheight属性、alt属性を -->
+      <img src="picture/logo-mark-side.png" alt="Japanese syllabary" width="120px" height="60px">
     </h1>
     <!-- nav -->
     <nav class="header-nav">
@@ -40,330 +39,181 @@
         <li><a href="#wa">わ行</a></li>
       </ul>
     </nav>
-    <!-- floatで横並び 終わり -->
+    <!-- headerをfloatで横並びにし固定表示 終わり -->
   </header>
   <!-- main -->
   <main>
     <article id="a">
-      <h2>あ行</h2>
-      <nav>
+      <h2 class="sub-title">あ行</h2>
+      <!-- floatで横並び -->
+      <nav class="a-nav">
         <ul>
-          <li><a href="＃aa">あ</a></li>
-          <li><a href="＃ai">い</a></li>
-          <li><a href="＃au">う</a></li>
-          <li><a href="＃ae">え</a></li>
-          <li><a href="＃ao">お</a></li>
+          <li class="a-list"><a href="＃aa">あ</a></li>
+          <li class="a-list"><a href="＃ai">い</a></li>
+          <li class="a-list"><a href="＃au">う</a></li>
+          <li class="a-list"><a href="＃ae">え</a></li>
+          <li class="a-list"><a href="＃ao">お</a></li>
         </ul>
       </nav>
+      <!-- floatで横並び 終わり -->
       <section id="aa">
         <h3>あ</h3>
-        <p></p>
+        <p>aaaaa</p>
       </section>
       <section id="ai">
         <h3>い</h3>
-        <p></p>
+        <p>iiii</p>
       </section>
       <section id="au">
         <h3>う</h3>
-        <p></p>
+        <p>uuuu</p>
       </section>
       <section id="ae">
         <h3>え</h3>
-        <p></p>
+        <p>eeee</p>
       </section>
       <section id="ao">
         <h3>お</h3>
-        <p></p>
+        <p>oooo</p>
       </section>
     </article>
-    <article>
-      <h2></h2>
-      <nav>
+    <article id="ka">
+      <h2 class="sub-title">か行</h2>
+      <!-- inline-blockで横並び -->
+      <nav class="ka-nav">
         <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
+          <li class="ka-list"><a href="＃ka">か</a></li>
+          <li class="ka-list"><a href="＃ki">き</a></li>
+          <li class="ka-list"><a href="＃ku">く</a></li>
+          <li class="ka-list"><a href="＃ke">け</a></li>
+          <li class="ka-list"><a href="＃ko">こ</a></li>
         </ul>
       </nav>
-      <section>
-        <h3></h3>
-        <p></p>
+      <!-- inline-blockで横並び 終わり -->
+      <section id="ka">
+        <h3>か</h3>
+        <p>kakakakaka</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ki">
+        <h3>き</h3>
+        <p>kikikikiki</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ku">
+        <h3>く</h3>
+        <p>kukukukuku</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ke">
+        <h3>け</h3>
+        <p>kekekekeke</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ko">
+        <h3>こ</h3>
+        <p>kokokokoko</p>
       </section>
     </article>
-    <article>
-      <h2></h2>
-      <nav>
+    <article id="sa">
+      <h2 class="sub-title">さ行</h2>
+      <!-- table-cellで横並び -->
+      <nav class="sa-nav">
         <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
+          <li class="sa-list"><a href="＃sa">さ</a></li>
+          <li class="sa-list"><a href="＃si">し</a></li>
+          <li class="sa-list"><a href="＃su">す</a></li>
+          <li class="sa-list"><a href="＃se">せ</a></li>
+          <li class="sa-list"><a href="＃so">そ</a></li>
         </ul>
       </nav>
-      <section>
-        <h3></h3>
-        <p></p>
+      <!-- table-cellで横並び 終わり -->
+      <section id="sa">
+        <h3>さ</h3>
+        <p>sasasasasa</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="si">
+        <h3>し</h3>
+        <p>sisisisisi</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="su">
+        <h3>す</h3>
+        <p>sususususu</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="se">
+        <h3>せ</h3>
+        <p>sesesesese</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="so">
+        <h3>そ</h3>
+        <p>sososososo</p>
       </section>
     </article>
-    <article>
-      <h2></h2>
-      <nav>
+    <article id="ta">
+      <h2 class="sub-title">た行</h2>
+      <!-- flexboxで横並び -->
+      <nav class="ta-nav">
         <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
+          <li class="ta-list"><a href="＃ta">た</a></li>
+          <li class="ta-list"><a href="＃ti">ち</a></li>
+          <li class="ta-list"><a href="＃tu">つ</a></li>
+          <li class="ta-list"><a href="＃te">て</a></li>
+          <li class="ta-list"><a href="＃to">と</a></li>
         </ul>
       </nav>
-      <section>
-        <h3></h3>
-        <p></p>
+      <!-- flexboxで横並び 終わり -->
+      <section id="ta">
+        <h3>た</h3>
+        <p>tatatatata</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ti">
+        <h3>ち</h3>
+        <p>tititititi</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="tu">
+        <h3>つ</h3>
+        <p>tututututu</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="te">
+        <h3>て</h3>
+        <p>tetetetete</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="to">
+        <h3>と</h3>
+        <p>tototototo</p>
       </section>
     </article>
-    <article>
-      <h2></h2>
-      <nav>
+    <article id="na">
+      <h2 class="sub-title">な行</h2>
+      <!-- gridで横並び -->
+      <nav class="na-nav">
         <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
+          <li class="na-list"><a href="＃na">な</a></li>
+          <li class="na-list"><a href="＃ni">に</a></li>
+          <li class="na-list"><a href="＃nu">ぬ</a></li>
+          <li class="na-list"><a href="＃ne">ね</a></li>
+          <li class="na-list"><a href="＃no">の</a></li>
         </ul>
       </nav>
-      <section>
-        <h3></h3>
-        <p></p>
+      <!-- gridで横並び 終わり -->
+      <section id="na">
+        <h3>な</h3>
+        <p>nanananana</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ni">
+        <h3>に</h3>
+        <p>ninininini</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="nu">
+        <h3>ぬ</h3>
+        <p>nununununu</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="ne">
+        <h3>ね</h3>
+        <p>nenenenene</p>
       </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-    </article>
-    <article>
-      <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-        </ul>
-      </nav>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
+      <section id="no">
+        <h3>の</h3>
+        <p>nonononono</p>
       </section>
     </article>
-    <article>
-      <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-        </ul>
-      </nav>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-    </article>
-    <article>
-      <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-        </ul>
-      </nav>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-    </article>
-    <article>
-      <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-        </ul>
-      </nav>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-    </article>
-    <article>
-      <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-          <li><a href="＃"></a></li>
-        </ul>
-      </nav>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-      </section>
-    </article>
+
   </main>
 </body>
 </html>
